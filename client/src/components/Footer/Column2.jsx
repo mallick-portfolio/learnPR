@@ -14,9 +14,6 @@ const Column2 = () => {
           About Us
         </li>
         <li className="border-b border-dashed border-textBase pb-2 cursor-pointer">
-          Our Mission
-        </li>
-        <li className="border-b border-dashed border-textBase pb-2 cursor-pointer">
           Terms and Conditions
         </li>
         <li className="border-b border-dashed border-textBase pb-2 cursor-pointer">

@@ -36,11 +36,14 @@ const Header = () => {
           <ul className="desktop-menu">
             <li className="menu-item">Home</li>
             <li className="menu-item">About</li>
+            <li className="menu-item">
+              <Link to={"/course"}>Course</Link>
+            </li>
             <li className="menu-item">Gallery</li>
             <li className="menu-item">Teachers</li>
             <li className="menu-item">Contact</li>
             {user ? (
-              <li>
+              <li className="px-3 py-1 bg-primary ml-4 rounded-md text-white">
                 <button onClick={() => signOut(auth)}>Logout</button>
               </li>
             ) : (
@@ -106,11 +109,14 @@ const Header = () => {
           >
             <li className="menu-item my-1">Home</li>
             <li className="menu-item my-1">About</li>
+            <li className="menu-item my-1">
+              <Link to={"/course"}>Course</Link>
+            </li>
             <li className="menu-item my-1">Gallery</li>
             <li className="menu-item my-1">Teachers</li>
             <li className="menu-item my-1">Contact</li>
             {user ? (
-              <li>
+              <li className="px-3 py-1 bg-primary ml-4 rounded-md text-white">
                 <button onClick={() => signOut(auth)}>Logout</button>
               </li>
             ) : (

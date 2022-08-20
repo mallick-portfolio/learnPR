@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { Header, Footer } from "./components/index.js";
-import { Home, Register, Login } from "./pages/index.js";
+import { Home, Register, Login, Course, RequireAuth } from "./pages/index.js";
 import { ToastContainer } from "react-toastify";
 const App = () => {
   const location = useLocation();
@@ -14,6 +14,15 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Navigate to={"/home"} />} />
         <Route path="/home" element={<Home />} />
+        <Route
+          path="/course"
+          element={
+            <RequireAuth>
+              <Course />
+            </RequireAuth>
+          }
+        />
+
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
       </Routes>
