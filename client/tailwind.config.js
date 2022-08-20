@@ -16,7 +16,7 @@ module.exports = {
       colors: {
         primary: "#FC9928",
         secondary: "#333333",
-        pink: "#ff49db",
+        textBase: "#777777",
         orange: "#ff7849",
         bannerColor: "rgba(85, 85, 84, .4)",
         aboutuBg: "rgba(0, 0, 0, .6)",

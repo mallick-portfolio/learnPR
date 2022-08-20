@@ -1,11 +1,12 @@
 import React from "react";
-import { Banner, About } from "../../components/index.js";
+import { Banner, About, Course } from "../../components/index.js";
 
 const Home = () => {
   return (
     <div>
       <Banner />
       <About />
+      <Course />
     </div>
   );
 };

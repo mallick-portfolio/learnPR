@@ -9,7 +9,7 @@ const About = () => {
       <img className="" src={about} alt="" />
       <div className="px-4 sm:px-8 lg:px-0">
         <Title firstTitle={"About"} secondTitle={"Learnpro"} />
-        <p className="py-4">
+        <p className="py-4 text-textBase">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas
           voluptatem maiores eaque similique non distinctio voluptates
           perspiciatis omnis, repellendus ipsa aperiam, laudantium voluptatum
