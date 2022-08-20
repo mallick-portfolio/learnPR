@@ -11,27 +11,18 @@ const Teacher = () => {
     <div className="bg-[#F9F9F6] py-12">
       <div className="container">
         <Title firstTitle={"QUALIFIED"} secondTitle="TEACHERS" />
-        <h4 className="text-textBase pt-2 pb-6">
-          WE HAVE HIGHLY QUALIFIED TEACHERS
-        </h4>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
+        <h4 className="section-subTitle">WE HAVE HIGHLY QUALIFIED TEACHERS</h4>
+        <div className="teacher-grid">
           {teachers.map((teacher) => (
-            <div
-              key={teacher.id}
-              className="relative group overflow-hidden flex flex-col items-center"
-            >
+            <div key={teacher.id} className="single-teacher group">
               <img className="rounded-md" src={teacher.image} alt="" />
-              <div className="text-center bg-white px-4 pt-2 pb-4 absolute top-80 sm::top-56 lg:top-72 group-hover:top-64 sm:group-hover:top-24 lg:group-hover:top-44 duration-500 transition-all md:left-0 md:right-0 left-14 right-14">
-                <h4 className="text-base sm:text-lg font-medium text-secondary font-robotoS">
-                  {teacher.name}
-                </h4>
-                <h6 className="text-xs  relative after:absolute after:top-6 mb-4 after:left-1/2 after:-translate-x-1/2 after:w-12 after:h-0.5 after:bg-primary font-medium text-secondary font-robotoS">
-                  {teacher.position}
-                </h6>
-                <p className="text-xs sm:text-sm md:text-base">{teacher.des}</p>
+              <div className="teacher-content group-hover:top-64 sm:group-hover:top-24 lg:group-hover:top-44">
+                <h4 className="teacher-name">{teacher.name}</h4>
+                <h6 className="teacher-postion">{teacher.position}</h6>
+                <p className="teacher-des">{teacher.des}</p>
               </div>
-              <div className="absolute -top-96 group-hover:top-0 duration-500 transition-all -mr-1 sm:mr-0 right-16 sm:right-0">
-                <ul className="flex p-2 text-sm flex-col gap-4 bg-primary text-white">
+              <div className="teacher-social">
+                <ul className="teacher-ul">
                   <li className="cursor-pointer">
                     <FaFacebookF />
                   </li>

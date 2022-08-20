@@ -22,6 +22,12 @@ code {
     monospace;
 }
 
+@layer components {
+  .section-subTitle {
+    @apply text-textBase pt-2 pb-6;
+  }
+}
+
 @layer utilities {
   .header-container {
     @apply container py-5 flex flex-row justify-between items-center;
@@ -58,5 +64,74 @@ code {
   }
   .arrow-btn {
     @apply mx-auto mt-1 rounded-full w-8 h-8 lg:w-12 lg:h-12 border border-primary text-primary cursor-pointer;
+  }
+  .homeAbout-container {
+    @apply container py-12 flex flex-col lg:flex-row gap-6 justify-between items-center;
+  }
+  .homeAbout-image {
+    @apply relative after:absolute after:top-0 after:bottom-0 after:right-0  after:left-0 after:bg-aboutuBg w-2/3 lg:w-full;
+  }
+  .homeAbout-img-content {
+    @apply absolute w-full z-30 top-1/2 left-1/2 -translate-x-1/2 flex items-center flex-col -translate-y-1/2
+  }
+  .homeAbout-img-title {
+    @apply text-base sm:text-lg md:text-xl font-medium text-white
+  }
+  .homeAbout-img-discout {
+    @apply text-xl md:text-3xl lg:text-4xl font-semibold font-robotoS text-primary
+  }
+  .course-container{
+    @apply container py-12 relative z-10
+  }
+  .course-arrow {
+    @apply mx-auto mt-1 rounded-full w-8 h-8 border-2 border-primary text-primary cursor-pointer
+  }
+  .courser-card-content {
+    @apply flex py-4 justify-start gap-8 items-center
+  }
+  .course-cart-title {
+    @apply text-sm sm:text-base md:text-lg font-medium
+  }
+  .cart-icon-flex {
+    @apply flex flex-col sm:flex-row justify-start sm:gap-8
+  }
+  .cart-icon-common {
+    @apply flex items-center gap-1 text-base
+  }
+  .course-cart-subContent {
+    @apply flex py-4 justify-start items-center gap-8
+  }
+  .cart-cart-sub-flex {
+    @apply relative after:absolute after:border-r-2 after:-right-4 after:top-0 after:bottom-0 after:w-1 after:h-full after:border-secondary
+  }
+  .couse-duration {
+    @apply text-sm font-semibold text-secondary
+  }
+  .course-card-class{
+    @apply relative after:absolute after:border-r-2 after:-right-4 after:top-0 after:bottom-0 after:w-1 after:h-full after:border-secondary
+  }
+  .teacher-grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8;
+  }
+  .single-teacher {
+    @apply relative overflow-hidden flex flex-col items-center;
+  }
+  .teacher-content {
+    @apply text-center bg-white shadow-lg px-4 pt-2 pb-4 absolute top-80 sm:top-56 lg:top-72 duration-500 transition-all md:left-0 md:right-0 left-14 right-14;
+  }
+  .teacher-name {
+    @apply text-base sm:text-lg font-medium text-secondary font-robotoS;
+  }
+  .teacher-postion {
+    @apply text-xs  relative after:absolute after:top-6 mb-4 after:left-1/2 after:-translate-x-1/2 after:w-12 after:h-0.5 after:bg-primary font-medium text-secondary font-robotoS;
+  }
+  .teacher-des {
+    @apply text-xs sm:text-sm md:text-base;
+  }
+  .teacher-social {
+    @apply absolute -top-96 group-hover:top-0 duration-500 transition-all -mr-1 sm:mr-0 right-16 sm:right-0;
+  }
+  .teacher-ul {
+    @apply flex p-2 text-sm flex-col gap-4 bg-primary text-white;
   }
 }

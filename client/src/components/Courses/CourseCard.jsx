@@ -18,12 +18,10 @@ const CourseCard = ({ course }) => {
     <div>
       <img src={image} alt="" />
       <div className="p-4 bg-white shadow-sm">
-        <div className="flex py-4 justify-start gap-8 items-center">
+        <div className="courser-card-content">
           <div>
-            <h3 className="text-sm sm:text-base md:text-lg font-medium">
-              {title}
-            </h3>
-            <div className="flex flex-col sm:flex-row justify-start sm:gap-8">
+            <h3 className="course-cart-title">{title}</h3>
+            <div className="cart-icon-flex">
               <StarRatings
                 starDimension={"15px"}
                 starSpacing={"2px"}
@@ -35,11 +33,11 @@ const CourseCard = ({ course }) => {
                 numberOfStars={5}
                 name="rating"
               />
-              <div className="flex items-center gap-1 text-base">
+              <div className="cart-icon-common">
                 <AiFillWechat className="text-primary" />
                 {comment}
               </div>
-              <div className="flex items-center gap-1 text-base">
+              <div className="cart-icon-common">
                 <AiFillLike className="text-primary" />
                 {like}
               </div>
@@ -50,12 +48,12 @@ const CourseCard = ({ course }) => {
         <p className="text-base text-textBase">
           {des.length > 100 ? des.slice(0, 100) : des}
         </p>
-        <div className="flex py-4 justify-start items-center gap-8">
-          <div className="relative after:absolute after:border-r-2 after:-right-4 after:top-0 after:bottom-0 after:w-1 after:h-full after:border-secondary">
-            <h5 className="text-sm font-semibold text-secondary">{duration}</h5>
+        <div className="course-cart-subContent">
+          <div className="cart-cart-sub-flex">
+            <h5 className="couse-duration">{duration}</h5>
             <p className="text-xs text-secondary">Course</p>
           </div>
-          <div className="relative after:absolute after:border-r-2 after:-right-4 after:top-0 after:bottom-0 after:w-1 after:h-full after:border-secondary">
+          <div className="course-card-class">
             <h5>{classSize}</h5>
             <p className="text-xs text-secondary">Class Size</p>
           </div>

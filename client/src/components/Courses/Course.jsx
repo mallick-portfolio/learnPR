@@ -17,9 +17,9 @@ import CourseCard from "./CourseCard.jsx";
 const Course = () => {
   return (
     <div className="bg-[#F9F9F6]">
-      <div className="container py-12 relative z-10">
+      <div className="course-container">
         <Title firstTitle={"POPULAR"} secondTitle={"COURSES"} />
-        <h4 className="text-textBase pt-2 pb-6">CHOOSE YOUR DESIRED COURSE</h4>
+        <h4 className="section-subTitle">CHOOSE YOUR DESIRED COURSE</h4>
         <div className="">
           <Swiper
             loop={true}
@@ -65,8 +65,8 @@ const Course = () => {
               </SwiperSlide>
             ))}
             <div className="w-24 flex mt-4">
-              <IoIosArrowBack className="prev mx-auto mt-1 rounded-full w-8 h-8 border-2 border-primary text-primary cursor-pointer" />
-              <IoIosArrowForward className="next mx-auto mt-1 rounded-full w-8 h-8 border-2 border-primary text-primary cursor-pointer" />
+              <IoIosArrowBack className="prev course-arrow" />
+              <IoIosArrowForward className="next course-arrow" />
             </div>
           </Swiper>
         </div>
