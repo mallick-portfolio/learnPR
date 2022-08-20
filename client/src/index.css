@@ -21,10 +21,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.register {
+  background-image: url("https://i.ibb.co/0n0w6kD/register.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 120px 0;
+  position: relative;
+}
 
 @layer components {
   .section-subTitle {
     @apply text-textBase pt-2 pb-6;
+  }
+  .form-label {
+    @apply last:text-sm lg:text-lg font-semibold text-primary;
+  }
+  .form-input {
+    @apply w-full shadow-2xl rounded-md h-10 lg:h-12 focus:outline-none focus:border-2 focus:border-primary pl-4;
   }
 }
 
@@ -72,43 +85,43 @@ code {
     @apply relative after:absolute after:top-0 after:bottom-0 after:right-0  after:left-0 after:bg-aboutuBg w-2/3 lg:w-full;
   }
   .homeAbout-img-content {
-    @apply absolute w-full z-30 top-1/2 left-1/2 -translate-x-1/2 flex items-center flex-col -translate-y-1/2
+    @apply absolute w-full z-30 top-1/2 left-1/2 -translate-x-1/2 flex items-center flex-col -translate-y-1/2;
   }
   .homeAbout-img-title {
-    @apply text-base sm:text-lg md:text-xl font-medium text-white
+    @apply text-base sm:text-lg md:text-xl font-medium text-white;
   }
   .homeAbout-img-discout {
-    @apply text-xl md:text-3xl lg:text-4xl font-semibold font-robotoS text-primary
+    @apply text-xl md:text-3xl lg:text-4xl font-semibold font-robotoS text-primary;
   }
-  .course-container{
-    @apply container py-12 relative z-10
+  .course-container {
+    @apply container py-12 relative z-10;
   }
   .course-arrow {
-    @apply mx-auto mt-1 rounded-full w-8 h-8 border-2 border-primary text-primary cursor-pointer
+    @apply mx-auto mt-1 rounded-full w-8 h-8 border-2 border-primary text-primary cursor-pointer;
   }
   .courser-card-content {
-    @apply flex py-4 justify-start gap-8 items-center
+    @apply flex py-4 justify-start gap-8 items-center;
   }
   .course-cart-title {
-    @apply text-sm sm:text-base md:text-lg font-medium
+    @apply text-sm sm:text-base md:text-lg font-medium;
   }
   .cart-icon-flex {
-    @apply flex flex-col sm:flex-row justify-start sm:gap-8
+    @apply flex flex-col sm:flex-row justify-start sm:gap-8;
   }
   .cart-icon-common {
-    @apply flex items-center gap-1 text-base
+    @apply flex items-center gap-1 text-base;
   }
   .course-cart-subContent {
-    @apply flex py-4 justify-start items-center gap-8
+    @apply flex py-4 justify-start items-center gap-8;
   }
   .cart-cart-sub-flex {
-    @apply relative after:absolute after:border-r-2 after:-right-4 after:top-0 after:bottom-0 after:w-1 after:h-full after:border-secondary
+    @apply relative after:absolute after:border-r-2 after:-right-4 after:top-0 after:bottom-0 after:w-1 after:h-full after:border-secondary;
   }
   .couse-duration {
-    @apply text-sm font-semibold text-secondary
+    @apply text-sm font-semibold text-secondary;
   }
-  .course-card-class{
-    @apply relative after:absolute after:border-r-2 after:-right-4 after:top-0 after:bottom-0 after:w-1 after:h-full after:border-secondary
+  .course-card-class {
+    @apply relative after:absolute after:border-r-2 after:-right-4 after:top-0 after:bottom-0 after:w-1 after:h-full after:border-secondary;
   }
   .teacher-grid {
     @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8;
@@ -133,5 +146,32 @@ code {
   }
   .teacher-ul {
     @apply flex p-2 text-sm flex-col gap-4 bg-primary text-white;
+  }
+  .login-container {
+    @apply h-full w-full sm:h-screen sm:w-screen flex flex-col justify-center items-center register;
+  }
+  .login-form {
+    @apply px-4 py-3 mx-4 sm:mx-0 sm:px-24 sm:py-6 bg-white rounded-lg;
+  }
+  .form-title {
+    @apply text-xl font-semibold text-primary md:text-2xl lg:text-4xl text-center;
+  }
+  .form-social-flex {
+    @apply flex flex-col sm:flex-row gap-4 justify-center items-center py-4;
+  }
+  .social-github {
+    @apply cursor-pointer w-full sm:w-auto px-4 sm:px-8 py-2 lg:py-4 bg-[#3b5998] rounded-md flex gap-2 items-center;
+  }
+  .social-google {
+    @apply cursor-pointer w-full sm:w-auto px-4 sm:px-8 py-2 lg:py-4 shadow-2xl rounded-md flex gap-2 items-center;
+  }
+  .github-title {
+    @apply text-lg sm:text-xl font-semibold text-white;
+  }
+  .google-title {
+    @apply text-lg sm:text-xl font-semibold text-[#555555];
+  }
+  .form-submit {
+    @apply w-full bg-primary border hover:border-primary hover:bg-white hover:text-primary transition-all duration-500 rounded-md  py-2 lg:py-3 text-white cursor-pointer text-lg sm:text-xl;
   }
 }

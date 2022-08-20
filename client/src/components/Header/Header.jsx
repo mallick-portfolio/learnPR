@@ -2,7 +2,13 @@ import React, { useEffect, useState } from "react";
 import logo from "../../assets/images/logo.png";
 import { FiLogIn } from "react-icons/fi";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "../../firebase.init.js";
+import Loading from "../Shared/Loading.jsx";
+import { signOut } from "firebase/auth";
 const Header = () => {
+  const [user, loading, error] = useAuthState(auth);
   const headerRef = useRef(null);
   const [show, setShow] = useState(false);
   useEffect(() => {
@@ -12,6 +18,12 @@ const Header = () => {
       }
     });
   }, []);
+  if (loading) {
+    return <Loading />;
+  }
+  if (error) {
+    console.log(error);
+  }
   return (
     <header ref={headerRef} className="bg-white shadow-lg">
       <div className="header-container">
@@ -27,7 +39,20 @@ const Header = () => {
             <li className="menu-item">Gallery</li>
             <li className="menu-item">Teachers</li>
             <li className="menu-item">Contact</li>
-            <li className="menu-item">Login</li>
+            {user ? (
+              <li>
+                <button onClick={() => signOut(auth)}>Logout</button>
+              </li>
+            ) : (
+              <li className="px-3 py-1 bg-primary ml-4 rounded-md">
+                <Link
+                  className=" flex items-center gap-1 text-white"
+                  to={"/login"}
+                >
+                  <span>login</span> <FiLogIn className="right-navbar-item" />
+                </Link>
+              </li>
+            )}
           </ul>
         </div>
 
@@ -84,7 +109,20 @@ const Header = () => {
             <li className="menu-item my-1">Gallery</li>
             <li className="menu-item my-1">Teachers</li>
             <li className="menu-item my-1">Contact</li>
-            <li className="menu-item">Login</li>
+            {user ? (
+              <li>
+                <button onClick={() => signOut(auth)}>Logout</button>
+              </li>
+            ) : (
+              <li className="px-3 py-1 bg-primary ml-4 rounded-md">
+                <Link
+                  className=" flex items-center gap-1 text-white"
+                  to={"/login"}
+                >
+                  <span>login</span> <FiLogIn className="right-navbar-item" />
+                </Link>
+              </li>
+            )}
           </ul>
         </div>
       </div>
