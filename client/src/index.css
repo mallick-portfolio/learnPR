@@ -50,7 +50,7 @@ code {
   .banner-btn-flex {
     @apply flex items-center justify-center mt-5 gap-8
   }
-  .banner-btn {
+  .common-btn {
     @apply bg-primary px-2 lg:px-5 py-1 lg:py-2 rounded-full font-medium lg:text-base text-white
   }
   .slider-arrow {

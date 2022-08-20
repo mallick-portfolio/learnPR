@@ -19,6 +19,7 @@ module.exports = {
         pink: "#ff49db",
         orange: "#ff7849",
         bannerColor: "rgba(85, 85, 84, .4)",
+        aboutuBg: "rgba(0, 0, 0, .6)",
       },
       fontFamily: {
         robotoS: ["Roboto Slab", "serif"],

@@ -8,6 +8,7 @@ import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import banner1 from "../../assets/images/banner1.jpg";
 import banner2 from "../../assets/images/banner2.jpg";
 import banner3 from "../../assets/images/banner3.jpg";
+import CommonBtn from "../Shared/CommonBtn.jsx";
 
 const Banner = () => {
   const items = [
@@ -64,8 +65,8 @@ const Banner = () => {
                   and satisfaction
                 </h2>
                 <div className="banner-btn-flex">
-                  <button className="banner-btn">Our Service</button>
-                  <button className="banner-btn">Get a Quote</button>
+                  <CommonBtn title={"Our Service"} />
+                  <CommonBtn title={"Get a Quote"} />
                 </div>
               </div>
             </div>
