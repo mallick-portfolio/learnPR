@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
-import Header from "./components/Header/Header.jsx";
+import { Header, Footer } from "./components/index.js";
 import { Home } from "./pages/index.js";
 const App = () => {
   return (
@@ -10,6 +10,7 @@ const App = () => {
         <Route path="/" element={<Navigate to={"/home"} />} />
         <Route path="/home" element={<Home />} />
       </Routes>
+      <Footer />
     </div>
   );
 };
