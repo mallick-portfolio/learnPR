@@ -25,7 +25,7 @@ const CourseCard = ({ course }) => {
             </h3>
             <div className="flex flex-col sm:flex-row justify-start sm:gap-8">
               <StarRatings
-                starDimension={"20px"}
+                starDimension={"15px"}
                 starSpacing={"2px"}
                 isAggregateRating={true}
                 isSelectable={true}
