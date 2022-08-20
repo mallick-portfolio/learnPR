@@ -1,5 +1,11 @@
 import React from "react";
-import { Banner, About, Course, FaqAndEvents } from "../../components/index.js";
+import {
+  Banner,
+  About,
+  Course,
+  FaqAndEvents,
+  Teacher,
+} from "../../components/index.js";
 
 const Home = () => {
   return (
@@ -8,6 +14,7 @@ const Home = () => {
       <About />
       <Course />
       <FaqAndEvents />
+      <Teacher />
     </div>
   );
 };
