@@ -18,6 +18,10 @@ module.exports = {
         secondary: "#333333",
         pink: "#ff49db",
         orange: "#ff7849",
+        bannerColor: "rgba(85, 85, 84, .4)",
+      },
+      fontFamily: {
+        robotoS: ["Roboto Slab", "serif"],
       },
     },
   },
