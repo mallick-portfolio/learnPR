@@ -79,6 +79,7 @@ const Header = () => {
               show ? "top-16 left-0" : "top-16 -left-96"
             }`}
           >
+            <li>test commit </li>
             <li className="menu-item my-1">Home</li>
             <li className="menu-item my-1">About</li>
             <li className="menu-item my-1">Gallery</li>
