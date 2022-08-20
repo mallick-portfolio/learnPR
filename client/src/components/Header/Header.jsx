@@ -75,7 +75,7 @@ const Header = () => {
             </ul>
           </div>
           <ul
-            className={`flex fixed bg-primary/90 z-40 w-36 md:w-44 h-screen  pt-6  flex-col transition-all duration-500 ${
+            className={`flex fixed bg-primary z-40 w-36 md:w-44 h-screen  pt-6  flex-col transition-all duration-500 ${
               show ? "top-16 left-0" : "top-16 -left-96"
             }`}
           >
