@@ -2,6 +2,7 @@ import React from "react";
 import Column1 from "./Column1.jsx";
 import Column2 from "./Column2.jsx";
 import Column3 from "./Column3.jsx";
+import Column4 from "./Column4.jsx";
 
 const Footer = () => {
   return (
@@ -10,6 +11,7 @@ const Footer = () => {
         <Column1 />
         <Column2 />
         <Column3 />
+        <Column4 />
       </div>
     </div>
   );
