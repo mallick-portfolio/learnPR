@@ -2,18 +2,19 @@ import React from "react";
 import { useState } from "react";
 import { AiOutlineQuestionCircle } from "react-icons/ai";
 import { BsPlusLg } from "react-icons/bs";
+import { FaMinus } from "react-icons/fa";
 
 const Faq = () => {
   const [active, setActive] = useState(1);
   const [show, setShow] = useState(true);
-  console.log(active);
   const handleClick = (id) => {
     if (active === id) {
       setActive(0);
       setShow(false);
+    } else {
+      setActive(id);
+      setShow(true);
     }
-    setActive(id);
-    setShow(!show);
   };
 
   return (
@@ -35,7 +36,11 @@ const Faq = () => {
             }`}
           >
             <div onClick={() => handleClick(faq.id)} className="cursor-pointer">
-              <BsPlusLg className="text-4xl p-3 bg-primary rounded-md text-white" />
+              {active === faq.id && show ? (
+                <FaMinus className="text-4xl p-3 bg-primary rounded-md text-white" />
+              ) : (
+                <BsPlusLg className="text-4xl p-3 bg-primary rounded-md text-white" />
+              )}
             </div>
             <div>
               <h5 className="text-base sm:text-lg font-robotoS text-secondary my-1">
