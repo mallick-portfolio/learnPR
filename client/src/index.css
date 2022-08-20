@@ -39,24 +39,24 @@ code {
     @apply relative after:absolute after:top-0 after:bottom-0 after:right-0 py-28 lg:py-44 after:left-0 after:bg-bannerColor text-white;
   }
   .banner-content {
-    @apply text-center relative z-20 px-4
+    @apply text-center relative z-20 px-4;
   }
   .banner-title {
-    @apply text-xl sm:text-2xl md:text-3xl lg:text-5xl sm:my-1 md:my-2 lg:my-4 font-robotoS font-semibold uppercase
+    @apply text-xl sm:text-2xl md:text-3xl lg:text-5xl sm:my-1 md:my-2 lg:my-4 font-robotoS font-semibold uppercase;
   }
   .banner-subtitle {
-    @apply text-base md:text-lg font-medium
+    @apply text-base md:text-lg font-medium;
   }
   .banner-btn-flex {
-    @apply flex items-center justify-center mt-5 gap-8
+    @apply flex items-center justify-center mt-5 gap-8;
   }
   .common-btn {
-    @apply bg-primary px-2 lg:px-5 py-1 lg:py-2 rounded-full font-medium lg:text-base text-white
+    @apply bg-primary px-2 lg:px-5 py-1 lg:py-2 rounded-full font-medium lg:text-base text-white;
   }
   .slider-arrow {
-    @apply absolute top-1/2  -translate-y-1/2 z-10
+    @apply absolute top-1/2  -translate-y-1/2 z-10;
   }
   .arrow-btn {
-    @apply mx-auto mt-1 rounded-full w-8 h-8 lg:w-12 lg:h-12 border border-primary text-primary cursor-pointer
+    @apply mx-auto mt-1 rounded-full w-8 h-8 lg:w-12 lg:h-12 border border-primary text-primary cursor-pointer;
   }
 }
