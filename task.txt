@@ -1,0 +1,25 @@
+Task
+
+Description:
+Our Ed-Tech company is currently looking for a front-end web developer to build our brand new website where users can buy any courses. Task details are given below.
+
+Task Detail:
+
+1. The home page will have a header, banner, services, and footer
+
+2. Add two extra sections on the home page in addition to the 4 sections mentioned above.
+
+3. The Services section will have at least 4 services. You can put one or more services in a row based on your design. 
+
+4. This route will be private/protected routes. Please make sure that if the user is not logged in, the private route redirects to the login page.
+
+5. You Must implement Email and password-based Authentication. This means you will have to implement the Registration and the login page. Users should be able to toggle between Login and Registration view.
+
+6. Implement at least one extra login, which could be (Facebook, Github, Google, etc.)
+
+7. Once logged in, the user name, and logout button should appear on the header, which will log out the user once clicked. Displaying the user profile pic on the header is optional.
+
+8. After reloading the page on a private route, the user should not be redirected to the login page.
+
+Additional information:
+Make the website responsive. Make sure the site looks different on desktop and mobile responsive. Tablet responsive is optional.
